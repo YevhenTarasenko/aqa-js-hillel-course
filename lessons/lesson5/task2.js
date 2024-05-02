@@ -1,7 +1,7 @@
 const averageGrade = 100;
 
 switch (true) {
-	case averageGrade < 0 || averageGrade > 100:
+	case averageGrade < 0 || averageGrade > 100 || typeof averageGrade != "number":
 		throw new Error("Користувач ввів невірні дані");
 	case averageGrade < 60:
 		console.log("Незадовільно");
