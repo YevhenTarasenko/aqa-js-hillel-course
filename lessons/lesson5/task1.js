@@ -1,6 +1,6 @@
-const averageGrade = 100;
+const averageGrade = 1;
 
-if (averageGrade < 0 || averageGrade > 100) {
+if (averageGrade < 0 || averageGrade > 100 || typeof averageGrade != "number") {
 	throw new Error("Користувач ввів невірні дані");
 } else if (averageGrade < 60) {
 	console.log("Незадовільно");
