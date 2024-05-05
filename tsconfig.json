@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "module": "commonjs",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+	  "removeComments": true,
+	  "noImplicitAny": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
