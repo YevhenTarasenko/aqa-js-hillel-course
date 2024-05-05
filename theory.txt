@@ -5,6 +5,7 @@
 
 - Встановити чи оновити node js
 - Встановити чи оновити NPM
+- Встановити транспілятор для typescript npm install -g typescript
 - Ініциалізувати npm init або npm ci (якщо це скачаний проект)
 - Додати GIT
 - Додати "type": "module"  в package.json
