@@ -16,7 +16,7 @@ try {
 	console.log("Work completed.");
 }
 
-// Виклик 2: denominator === 0
+// denominator === 0
 try {
 	const result = divide(10, 0);
 	console.log("Result:", result);
