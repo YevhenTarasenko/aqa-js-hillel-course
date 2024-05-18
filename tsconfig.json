@@ -8,6 +8,6 @@
 	  "removeComments": true,
 	  "noImplicitAny": true
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "lessons/lesson8-array/task4.js"],
   "exclude": ["node_modules"]
 }
