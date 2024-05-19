@@ -1,0 +1,114 @@
+_____________________________________________________________________________________________________________________________________________________
+Видалення властивостей
+
+const person = {
+	firstName: 'John',
+	lastName: 'Doe',
+	age: 30
+};
+
+delete person.age;
+console.log(person); // { firstName: 'John', lastName: 'Doe' }
+_____________________________________________________________________________________________________________________________________________________
+this
+
+Ключове слово this в методі об'єкта вказує на сам об'єкт, до якого він відноситься. В цьому прикладі ми побачимо як можна взаємодіяти з методами об'єкту.
+
+const person = {
+    name: "John",
+    greet: function() {
+        console.log(`Hello, my name is ${this.name}`);
+    },
+    friends: [],
+    addFriend: function (friendName){
+        this.friends.push(friendName)
+    }
+};
+
+person.greet(); // "Hello, my name is John"
+console.log(person.friends) // []
+person.addFriend("Stanislav");
+console.log(person.friends) // [ 'Stanislav' ]
+_____________________________________________________________________________________________________________________________________________________
+Оператор опціонального доступу (Optional Chaining Operator)
+
+object?.property
+object?.method()
+object?.[computedProperty]
+
+Приклад:
+
+const user = {
+    name: "John",
+    address: {
+        city: "New York",
+        zipcode: "10001"
+    }
+};
+
+// З оператором опціонального доступу
+const cityOptional = user?.address?.city;
+
+console.log(user.phones.mobile); // Помилка : TypeError: Cannot read properties of undefined (reading 'mobile')
+console.log(user.phones?.mobile); // undefined
+_____________________________________________________________________________________________________________________________________________________
+Оператор об'єднання з null" або "nullish coalescing operator”
+
+Синтаксис оператора ?? виглядає так:
+
+const result = value ?? defaultValue;
+
+const user = {
+	email: 'useremailrandom@emal.com',
+	gender: null
+};
+
+const userEmail = user.email ?? 'default@email.com';
+const userName = user.name ?? 'Гість';
+const userGender = user.gender ?? 'Невідомо';
+
+console.log(userEmail); // "useremailrandom@emal.com"
+console.log(userName); // "Гість"
+console.log(userGender); // "Невідомо"
+_____________________________________________________________________________________________________________________________________________________
+Перебирання об'єкта в JavaScript
+
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+for (let key in person) {
+  console.log(key + ': ' + person[key]);
+}
+_____________________________________________________________________________________________________________________________________________________
+Копіювання об'єктів. Патерн «Об'єкт параметрів»
+
+	Використання Spread оператора (...)
+
+const originalObject = { name: 'John', age: 30 };
+const copiedObject = { ...originalObject };
+
+	Метод Object.assign()
+
+const originalObject = { name: 'John', age: 30 };
+const copiedObject = Object.assign({}, originalObject);
+_____________________________________________________________________________________________________________________________________________________
+if in
+
+Приклад:
+
+const person = {
+    name: "John",
+    age: 30,
+    email: "john@example.com"
+};
+
+if ("age" in person) {
+    console.log("Person's age is:", person.age);
+} else {
+    console.log("Age property is not found in the person object");
+}
+_____________________________________________________________________________________________________________________________________________________
+
