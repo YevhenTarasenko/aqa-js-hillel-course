@@ -10,7 +10,7 @@ function divide(numerator: number, denominator: number): number {
 try {
 	const result = divide(10, 2); // 5
 	console.log("Result:", result);
-} catch (error) {
+} catch (error: any) {
 	console.error(error.message);
 } finally {
 	console.log("Work completed.");
@@ -20,7 +20,7 @@ try {
 try {
 	const result = divide(10, 0);
 	console.log("Result:", result);
-} catch (error) {
+} catch (error: any) {
 	console.error(error.message); // "Denominator cannot be zero."
 } finally {
 	console.log("Work completed.");
