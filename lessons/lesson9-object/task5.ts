@@ -3,20 +3,20 @@
 // 3. Зробіть деструктуризацію в циклі
 
 type Users = {
-	name: string;
-    email: string;
-    age: number
-}
+  name: string;
+  email: string;
+  age: number;
+};
 
 const users: Users[] = [
-	{ name: "Yevhen", email: "yevhen@gmail.com", age: 28 },
-	{ name: "Alex", email: "alex@gmail.com", age: 26 },
-	{ name: "Bob", email: "bob@example.com", age: 35 }
+  { name: 'Yevhen', email: 'yevhen@gmail.com', age: 28 },
+  { name: 'Alex', email: 'alex@gmail.com', age: 26 },
+  { name: 'Bob', email: 'bob@example.com', age: 35 },
 ];
 
-for (let {name, email, age} of users) {
-	console.log("Name:", name);
-	console.log("Email:", email);
-	console.log("Age:", age)
-	console.log("______________________")
-};
+for (const { name, email, age } of users) {
+  console.log('Name:', name);
+  console.log('Email:', email);
+  console.log('Age:', age);
+  console.log('______________________');
+}

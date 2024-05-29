@@ -3,16 +3,16 @@
 //  1. Використовуючи методи классу Promise отримати масив назв планет перших 10 id
 
 function getPlanetNames() {
-    const endpoint = 'https://swapi.dev/api';
-    const firstTenObjects = [];
+  const endpoint = 'https://swapi.dev/api';
+  const firstTenObjects = [];
 
-    for (let i = 1; i <= 10; i++) {
-        firstTenObjects.push(fetch(`${endpoint}/planets/${i}/`).then(response => response.json()));
-    }
+  for (let i = 1; i <= 10; i++) {
+    firstTenObjects.push(fetch(`${endpoint}/planets/${i}/`).then(response => response.json()));
+  }
 
-    return Promise.all(firstTenObjects)
-        .then(planets => planets.map(planet => planet.name))
-        .catch(error => console.error('Error fetching planet data:', error));
+  return Promise.all(firstTenObjects)
+    .then(planets => planets.map(planet => planet.name))
+    .catch(error => console.error('Error fetching planet data:', error));
 }
 
 getPlanetNames().then(planetNames => console.log(planetNames));
