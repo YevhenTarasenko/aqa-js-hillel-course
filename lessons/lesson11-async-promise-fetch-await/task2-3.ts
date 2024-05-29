@@ -34,5 +34,5 @@ async function getDataAboutPlanetAndResidentsFromFilm(filmId) {
     return error;
   }
 }
-
+any;
 getDataAboutPlanetAndResidentsFromFilm(3);

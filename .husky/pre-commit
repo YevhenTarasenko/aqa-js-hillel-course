@@ -1,1 +1,5 @@
-npm run lint
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx run format
+npx run lint
