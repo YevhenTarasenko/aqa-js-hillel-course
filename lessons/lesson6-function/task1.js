@@ -7,30 +7,30 @@
 
 // function declaration
 function calculateSquareOfRectangle(width, height) {
-	if (typeof width !== 'number' || typeof height !== 'number' || width < 0 || height < 0) {
-		return "Error: Both width and height must be a numbers only and a non-negative number"
-	}
-	return width * height
-};
+  if (typeof width !== 'number' || typeof height !== 'number' || width < 0 || height < 0) {
+    return 'Error: Both width and height must be a numbers only and a non-negative number';
+  }
+  return width * height;
+}
 
 console.log(`function declaration: ${calculateSquareOfRectangle(2, 2)}`);
 
 // function expression
 const calculateSquareOfRectangle2 = function (width, height) {
-	if (typeof width !== 'number' || typeof height !== 'number' || width < 0 || height < 0) {
-		return "Error: Both width and height must be a numbers only and a non-negative number"
-	}
-	return width * height
+  if (typeof width !== 'number' || typeof height !== 'number' || width < 0 || height < 0) {
+    return 'Error: Both width and height must be a numbers only and a non-negative number';
+  }
+  return width * height;
 };
 
 console.log(`function expression: ${calculateSquareOfRectangle2(3, 3)}`);
 
 // arrow function
 const calculateSquareOfRectangle3 = (width, height) => {
-	if (typeof width !== 'number' || typeof height !== 'number' || width < 0 || height < 0) {
-		return "Error: Both width and height must be a numbers only and a non-negative number"
-	}
-	return width * height
-}
+  if (typeof width !== 'number' || typeof height !== 'number' || width < 0 || height < 0) {
+    return 'Error: Both width and height must be a numbers only and a non-negative number';
+  }
+  return width * height;
+};
 
 console.log(`arrow function: ${calculateSquareOfRectangle3(4, 4)}`);

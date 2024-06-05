@@ -6,15 +6,15 @@
 // 3. Виведіть деструктуризовані змінні в консоль
 
 type Book = {
-	title: string;
-	author: string;
-	year: number
+  title: string;
+  author: string;
+  year: number;
 };
 
 const book: Book = {
-	title: "Software Testing - Base Course ",
-	author: "Svyatoslav Kulikov",
-	year: 2015
+  title: 'Software Testing - Base Course ',
+  author: 'Svyatoslav Kulikov',
+  year: 2015,
 };
 
 const { title, author } = book;

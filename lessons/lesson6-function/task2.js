@@ -6,14 +6,14 @@
 // Викличте вашу функцію з аргументами 25 і 15, і виведіть результат(чи є особа дорослою) в консоль для кожного випадку.
 
 function isAdult(age) {
-	if (typeof age !== "number" || age < 0) {
-		return "Error: Age must be a number only and a non-negative number"
-	}
-	return age >= 18
-};
+  if (typeof age !== 'number' || age < 0) {
+    return 'Error: Age must be a number only and a non-negative number';
+  }
+  return age >= 18;
+}
 
-console.log(isAdult(25))
-console.log(isAdult(15))
-console.log(isAdult(17))
-console.log(isAdult(-17))
-console.log(isAdult("Test"))
+console.log(isAdult(25));
+console.log(isAdult(15));
+console.log(isAdult(17));
+console.log(isAdult(-17));
+console.log(isAdult('Test'));
