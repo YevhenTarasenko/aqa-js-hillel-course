@@ -7,17 +7,17 @@
 // 3. Виведіть об'єкт student в консоль.
 
 type Student = {
-	firstName: string;
-	lastName: string;
-	age: number;
-	courses: string[] 
-}
+  firstName: string;
+  lastName: string;
+  age: number;
+  courses: string[];
+};
 
 const student: Student = {
-	firstName: "Yevhen",
-	lastName: "Tarasenko",
-	age: 28,
-	courses: ["Hillel Manual QA", "Hillel JS AQA"]
-}
+  firstName: 'Yevhen',
+  lastName: 'Tarasenko',
+  age: 28,
+  courses: ['Hillel Manual QA', 'Hillel JS AQA'],
+};
 
-console.log(student)
+console.log(student);

@@ -7,7 +7,7 @@
 // Виведіть отриманий об'єднаний масив на консоль.
 
 let firstArray = [1, 2, 3, 4, 5, 6, 7];
-let secondArray = ["test1", "test2", true];
+let secondArray = ['test1', 'test2', true];
 
 let firstAndSecondArray = firstArray.concat(secondArray);
-console.log(firstAndSecondArray)
+console.log(firstAndSecondArray);

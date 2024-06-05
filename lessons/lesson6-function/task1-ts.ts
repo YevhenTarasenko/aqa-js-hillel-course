@@ -7,30 +7,30 @@
 
 // function declaration
 function calculateSquareOfRectangle(width: number, height: number): number | string {
-	if (width < 0 || height < 0) {
-		return "Error: Both width and height must be a non-negative number"
-	}
-	return width * height
-};
+  if (width < 0 || height < 0) {
+    return 'Error: Both width and height must be a non-negative number';
+  }
+  return width * height;
+}
 
 console.log(`function declaration: ${calculateSquareOfRectangle(2, 4)}`);
 
 // function expression
 const calculateSquareOfRectangle2 = function (width: number, height: number): number | string {
-	if (width < 0 || height < 0) {
-		return "Error: Both width and height must be a non-negative number"
-	}
-	return width * height
+  if (width < 0 || height < 0) {
+    return 'Error: Both width and height must be a non-negative number';
+  }
+  return width * height;
 };
 
 console.log(`function expression: ${calculateSquareOfRectangle2(3, 3)}`);
 
 // arrow function
 const calculateSquareOfRectangle3 = (width: number, height: number): number | string => {
-	if (width < 0 || height < 0) {
-		return "Error: Both width and height must be a non-negative number"
-	}
-	return width * height
-}
+  if (width < 0 || height < 0) {
+    return 'Error: Both width and height must be a non-negative number';
+  }
+  return width * height;
+};
 
 console.log(`arrow function: ${calculateSquareOfRectangle3(4, 4)}`);

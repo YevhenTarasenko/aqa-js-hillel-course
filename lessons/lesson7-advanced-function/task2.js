@@ -7,16 +7,14 @@
 // Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник.
 
 function countDown(num) {
-	if (typeof num !== "number" || num < 0) {
-		console.log("Error: Num must be a non-negative number")
-		return
-	}
+  if (typeof num !== 'number' || num < 0) {
+    console.log('Error: Num must be a non-negative number');
+    return;
+  }
+  console.log(num);
+  if (num > 0) {
+    countDown(num - 1);
+  }
+}
 
-	console.log(num)
-
-	if (num > 0) {
-		countDown(num - 1)
-	}
-};
-
-countDown(5)
+countDown(5);

@@ -10,25 +10,25 @@
 // 4. Виведіть об'єкт car3 в консоль.
 
 type Car = {
-	brand: string;
-	model: string;
-	year?: number;
-	owner?: number
-}
+  brand: string;
+  model: string;
+  year?: number;
+  owner?: number;
+};
 
 const car1: Car = {
-	brand: "BMW",
-	model: "X5",
-	year: 2010
+  brand: 'BMW',
+  model: 'X5',
+  year: 2010,
 };
 
 const car2: Car = {
-	brand: "AUDI",
-	model: "Q3",
-	owner: 2015
-}
+  brand: 'AUDI',
+  model: 'Q3',
+  owner: 2015,
+};
 
 const car3: Car = { ...car1, ...car2 };
-console.log(car3)
+console.log(car3);
 
 // !!! Можливо помилка в завданні. Можливо owner повинно бути не "число" а "рядок" ?

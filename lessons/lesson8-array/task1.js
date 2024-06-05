@@ -16,17 +16,17 @@ let negativeCount = 0;
 let zeroCount = 0;
 
 for (let el of numbers) {
-	if (el > 0) {
-		positiveCount += 1
-	}
-	if (el < 0) {
-		negativeCount += 1
-	}
-	if (el === 0) {
-		zeroCount += 1
-	};
+  if (el > 0) {
+    positiveCount += 1;
+  }
+  if (el < 0) {
+    negativeCount += 1;
+  }
+  if (el === 0) {
+    zeroCount += 1;
+  }
 }
 
-console.log('Кількість позитивних чисел:', positiveCount)
-console.log('Кількість негативних чисел:', negativeCount)
-console.log('Кількість нульових чисел:', zeroCount)
+console.log('Кількість позитивних чисел:', positiveCount);
+console.log('Кількість негативних чисел:', negativeCount);
+console.log('Кількість нульових чисел:', zeroCount);
