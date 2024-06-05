@@ -7,20 +7,20 @@
 // 4. Виведіть оновлений об'єкт person в консоль.
 
 type Person = {
-	firstName: string;
-	lastName: string;
-	age: number;
-	email?: string
+  firstName: string;
+  lastName: string;
+  age: number;
+  email?: string;
 };
 
 const person: Person = {
-	firstName: "Yevhen",
-	lastName: "Tarasenko",
-	age: 28
+  firstName: 'Yevhen',
+  lastName: 'Tarasenko',
+  age: 28,
 };
 
-person.email = "yevhen@gmail.com";
+person.email = 'yevhen@gmail.com';
 
-delete person.age
+delete person.age;
 
 console.log(person);

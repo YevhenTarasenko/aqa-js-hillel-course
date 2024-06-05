@@ -2,10 +2,10 @@
 
 // Створіть дві змінні, які містять імена двох осіб.Використовуючи конкатенацію рядків, створіть новий рядок, який містить вітання для обох осіб.Виведіть результат в консоль.Потім використайте шаблонний рядок для створення того ж вітання.Виведіть результат в консоль.
 
-let userName1 = "John";
-let userName2 = "Pete";
+let userName1 = 'John';
+let userName2 = 'Pete';
 
-let greeting1 = "Greeting, " + userName1 + " and " + userName2 + "!";
+let greeting1 = 'Greeting, ' + userName1 + ' and ' + userName2 + '!';
 console.log(greeting1);
 
 let greeting2 = `Greeting, ${userName1} and ${userName2}!`;
